@@ -1,0 +1,73 @@
+.profile-user{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    width: 70rem;
+    padding: 10px 10px 10px 10px;
+    transition: all .2s ease-in-out ;
+    
+}
+
+.profile-user-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: column;
+}
+.link-to-profile-user{
+    text-decoration: none;
+}
+
+.profile-user:hover{
+color: #FFA07A;
+background-color: black;
+font-size: 30px;
+text-decoration: underline;
+}
+
+.single-profile{
+    margin-top: 150px;
+    background-color: white;
+    height: fit-content;
+    border-radius: 5px;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+.single-profile-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-username{
+    color:#FFA07A;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+.email{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5rem;
+}

@@ -1,22 +1,29 @@
+<h1 class="title"><span id="ur">Ur</span><span id="done">Done</span></h1>
 {% extends "registration/base.html"%}
 
 {% block content %}
-<form action="/registration/sign_in/" method="post">
+<div class="container">
+<div class="login-container">
+  <div>Log Into UrDone</div>
+  <form action="/registration/sign_in/" method="post" class="login-form">
   {% csrf_token %}
-  <div>
+  <div class="input-div">
     <label>
-      Email
-      <input type="email" name="email">
+      <input type="email" name="email" placeholder="Email">
     </label>
   </div>
-  <div>
+  <div class="input-div">
     <label>
-      Password
-      <input type="password" name="password">
+      <input type="password" name="password" placeholder="Password">
     </label>
+    {% if email_error or password_error %}
+    <div style="color: red; font-size: 12px;">Your email or password is incorrect</div>
+    {% endif %}
   </div>
   <button>Sign In</button>
-
 </form>
-<a href="/registration/sign_up/">Create New Account</a>
+<div id="or">or</div>
+<a href="/registration/sign_up/" class="create-new-account">Create New Account</a>
+</div>
+</div>
 {% endblock %}

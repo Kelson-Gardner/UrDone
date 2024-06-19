@@ -1,0 +1,19 @@
+.edit-bio{
+    resize: none;
+    border: none;
+    outline: none;
+    width: 40rem;
+    height: 10rem;
+    background-color: #F8F8FF;
+    border-radius: 5px;
+}
+
+.save-changes{
+    margin-top: 10px;
+    border: none;
+    background-color: #FFA07A;
+    border-radius: 5px;
+    width: 10rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}

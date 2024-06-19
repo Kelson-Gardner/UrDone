@@ -1,0 +1,38 @@
+.post-input{
+    background-color: white;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-post-input{
+    font-size: 45px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10rem;
+}
+.text-post-input{
+    resize: none;
+    width: 40rem;
+    height: 20rem;
+    background-color: #F8F8FF;
+    font-family: Helvetica, Arial, sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.create-post-button{
+    border: none;
+    background-color: #FFA07A;
+    border-radius: 5px;
+    width: 5rem;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

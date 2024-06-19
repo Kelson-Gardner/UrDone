@@ -1,0 +1,43 @@
+.create-profile{
+    display:flex;
+    
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    width: 50rem;
+    height: 50rem;
+    position: fixed;
+    top: 5rem;
+    padding: 10px 10px 10px 10px;
+}
+.create-profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-create-profile{
+    display:flex;
+    justify-content: baseline;
+    margin-bottom: 10rem;
+}
+.bio{
+    width: 20rem;
+    height: 5rem;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.age-input{
+    outline: none;
+    width: 39.5rem;
+    margin-bottom: 5px;
+}
