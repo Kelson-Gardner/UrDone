@@ -52,7 +52,7 @@ function Edit(){
     
 
     return(<div className="single-profile-container">
-    <div className="single-profile">
+    <div className="edit-profile">
         <div className="profile-username">{userName}</div>
         <div className="email" >{email}</div>
     <form onSubmit={(event) => {

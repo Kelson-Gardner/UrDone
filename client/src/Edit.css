@@ -8,6 +8,10 @@
     border-radius: 5px;
 }
 
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .save-changes{
     margin-top: 10px;
     border: none;
@@ -16,4 +20,18 @@
     width: 10rem;
     cursor: pointer;
     margin-left: 2rem;
+}
+
+.edit-profile{
+    margin-top: 75px;
+    background-color: white;
+    height: fit-content;
+    border-radius: 5px;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 10px 10px 10px 10px;
 }
