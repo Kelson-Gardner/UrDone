@@ -1,32 +1,49 @@
+<h1 class="title"><span id="ur">Ur</span><span id="done">Done</span></h1>
 {% extends "registration/base.html"%}
 
 {% block content %}
-<form action="/registration/sign_up/" method="post">
+<div class="container">
+<div class="login-container">
+<form action="/registration/sign_up/" method="post" class="login-form">
   {% csrf_token %}
-  <div>
+  <div class="input-div">
     <label>
-      First Name
-      <input type="text" name="first_name">
+      <input type="text" name="first_name" placeholder="First Name">
     </label>
+    {% if first_name_error %}
+    <div style="color: red; font-size: 12px;">Please enter your first name</div>
+    {% endif %}
   </div>
-  <div>
+  <div class="input-div">
     <label>
-      Last Name
-      <input type="text" name="last_name">
+      <input type="text" name="last_name" placeholder="Last Name">
     </label>
+    {% if last_name_error %}
+    <div style="color: red; font-size: 12px;">Please enter your last name</div>
+    {% endif %}
   </div>
-  <div>
+  <div class="input-div">
     <label>
-      Email
-      <input type="email" name="email">
+      <input type="email" name="email" placeholder="Email">
     </label>
+    {% if email_error %}
+    <div style="color: red; font-size: 12px;">Please enter a valid email</div>
+    {% endif %}
+    {% if email_exists_error %}
+    <div style="color: red; font-size: 12px;">Email is already in use</div>
+    {% endif %}
   </div>
-  <div>
+  <div class="input-div">
     <label>
-      Password
-      <input type="password" name="password">
+      <input type="password" name="password"placeholder="Password" >
     </label>
+    {% if password_error %}
+    <div style="color: red; font-size: 12px;">Please enter a password</div>
+    {% endif %}
   </div>
   <button>Create Account</button>
+  <div class="have-account">Already have an account? <span class="sign-in"><a href="/registration/sign_in/"> Sign In!</a></span></div>
 </form>
+</div>
+</div>
 {% endblock %}

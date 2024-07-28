@@ -6,8 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    /* style your login pages here because the normal
-      static asset flow is different now */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #F8F8FF;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .sign-in{
+      cursor: pointer;
+      color: #FFA07A;
+    }
+    
+    .have-account{
+      font-size: 10px;
+    }
+
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: white;
+      width: 20rem;
+      height: 20rem;
+      align-items: center;
+      padding: 20px 10px 20px 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    }
+    .login-form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: white;
+      width: 100%;
+      height: 12rem;
+      align-items: center;
+    }
+
+    .title{
+      font-size: 3rem;
+    }
+    #ur{
+      color: black;
+    }
+    #done{
+      color: #FFA07A;
+    }
+    .input-div{
+      margin-top: 10px;
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      padding: 15px 20px 15px 20px;
+      box-sizing: border-box;
+      border: solid 1px #DCDCDC;
+      border-radius: 5px;
+      outline: none;
+      font-size: 17px;
+    }
+    input::placeholder{
+      font-size: 17px;
+    }
+    button {
+      width: 100%;
+      margin-top: 10px;
+      box-sizing: border-box;
+      padding: 10px 5px 10px 5px;
+      background-color: #FFA07A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .create-new-account {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      width: 50%;
+      text-align: center;
+      padding: 10px 5px 10px 5px;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    #or{
+      font-size: 15px;
+    }
   </style>
 </head>
 <body>

@@ -22,3 +22,4 @@ urlpatterns = [
     path('registration/', include("registration.urls")),
     path("", include("core.urls")),
 ]
+

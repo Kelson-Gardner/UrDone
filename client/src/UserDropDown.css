@@ -1,0 +1,27 @@
+.profile-container{
+    padding: 20px 50px 20px 50px;
+    width: 10rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.drop-down-items-container{
+    width:100%;
+}
+.drop-down-item{
+    width:93%;
+    padding: 10px 10px 10px 10px;
+    color: black;
+}
+.drop-down-link{
+    
+    text-decoration: none;
+}
+.drop-down-item:hover{
+    background-color: #F8F8FF;
+    cursor: pointer;
+}
