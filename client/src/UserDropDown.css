@@ -18,10 +18,15 @@
     color: black;
 }
 .drop-down-link{
-    
     text-decoration: none;
 }
 .drop-down-item:hover{
     background-color: #F8F8FF;
     cursor: pointer;
+}
+
+.profile-name{
+    text-decoration: none;
+    color: black;
+    font-size: large;
 }

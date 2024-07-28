@@ -13,12 +13,11 @@ function UserDropDown(props){
           
         }
       }
-      
 
     return(
         <div className={props.className}>
             <div className="profile-container">
-                <div>{props.userName}</div>
+                <Link to={`/menu/${props.userId}`} className="profile-name"><div>{props.userName}</div></Link>
             </div>
             <div className="drop-down-items-container">
             <Link to="/edit" className='drop-down-link'><div className="drop-down-item">Edit Profile</div></Link>

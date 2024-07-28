@@ -12,6 +12,7 @@ function TopNav(){
     const [userFirstName, setUserFirstName] = useState("");
     const [userFullName, setUserFullName] = useState("");
     const [userDropDown, setUserDropDown] = useState(false);
+    const [userId, setUserId] = useState(0);
     const navigate = useNavigate();
     
     async function getUser(){
@@ -22,6 +23,7 @@ function TopNav(){
         const fullName = `${body.user.first_name} ${body.user.last_name}`;
         setUserFullName(fullName);
         setUserFirstName(body.user.first_name);
+        setUserId(body.user.id);
       }
 
 function checkDropDown(){
@@ -64,7 +66,7 @@ catch(error){
     {/* <div className="spacer"></div> */}
     <div>Welcome, <span id="nav-username" onClick={() => setUserDropDown(true)}>{userFirstName}</span></div>
     </div>
-    <UserDropDown className={userDropDown === true ? "userDropDownSelected" : "userDropDownHidden"} userName={userFullName}/>
+    <UserDropDown className={userDropDown === true ? "userDropDownSelected" : "userDropDownHidden"} userName={userFullName} userId={userId}/>
     </>
     );
 }
