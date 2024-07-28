@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import './Menu.css'
-
 
 function Menu(){
     const [profiles, setProfiles] = useState([])

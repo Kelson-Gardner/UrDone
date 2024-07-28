@@ -4,12 +4,12 @@ import './Home.css';
 import { Link, useNavigate } from "react-router-dom";
 
 function Home(){
-const [posts, setPosts] = useState([]);
-const [userFullName, setUserFullName] = useState("")
-const [displayComments, setDisplayComments] = useState([])
-const [comments, setComments] = useState([]);
-const [postToComment, setPostToComment] = useState("");
-const [promptedComment, setPromptedComment] = useState(false);
+    const [posts, setPosts] = useState([]);
+    const [userFullName, setUserFullName] = useState("")
+    const [displayComments, setDisplayComments] = useState([])
+    const [comments, setComments] = useState([]);
+    const [postToComment, setPostToComment] = useState("");
+    const [promptedComment, setPromptedComment] = useState(false);
 
     async function get_post(){
         const res = await fetch("/posts/", 
@@ -28,7 +28,6 @@ const [promptedComment, setPromptedComment] = useState(false);
         const body = await res.json();
         const fullName = `${body.user.first_name} ${body.user.last_name}`;
         setUserFullName(fullName);
-        // setUserFirstName(body.user.first_name);
       }
 
     async function updatePost(id, likes1){
@@ -82,10 +81,6 @@ const [promptedComment, setPromptedComment] = useState(false);
         scroller();
     }
 
-
-
-
-
     function promptComment(post){
         setPromptedComment(
             <form onSubmit={(e) => {
@@ -108,8 +103,8 @@ const [promptedComment, setPromptedComment] = useState(false);
             
         }
       };
-    function convertDateTime(datetime){
 
+    function convertDateTime(datetime){
         const monthNames = [
             "January", "February", "March",
             "April", "May", "June", "July",
@@ -127,7 +122,6 @@ const [promptedComment, setPromptedComment] = useState(false);
         return formattedDateString;
 
     }
-    const navigate = useNavigate();
 
     useEffect(() => {
         scroller();   

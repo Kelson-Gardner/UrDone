@@ -9,7 +9,6 @@ function Profile(){
     const [profiles, setProfiles] = useState([]);
     const [userName, setUserName] = useState("");
 
-
     async function getUser(){
         const res = await fetch("/me/", {
           credentials: "same-origin",
