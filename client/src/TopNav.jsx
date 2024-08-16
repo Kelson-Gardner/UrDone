@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import UserDropDown from "./UserDropDown";
 import './TopNav.css';
-import Home from "./Home";
-import Add from "./Add";
-import Settings from "./Settings";
-import Menu from "./Menu";
+// import Home from "./Home";
+// import Add from "./Add";
+// import Settings from "./Settings";
+// import Menu from "./Menu";
 import {Link, Outlet, useNavigate} from 'react-router-dom';
 
 function TopNav(){
