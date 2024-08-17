@@ -30,6 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "localhost"]
 
 INSTALLED_APPS = [
+    'corsheaders',
     'core.apps.CoreConfig',
     'registration.apps.RegistrationConfig',
     'django.contrib.admin',
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 if DEBUG:
@@ -126,3 +128,11 @@ STATIC_URL = 'static/' if not DEBUG else "__UNUSED__/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = "registration/sign_in/"
+
+CORS_ORIGIN_WHITELIST = [
+     'http://localhost:5173',
+     'http://0.0.0.0:5173'
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+

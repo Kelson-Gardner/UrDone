@@ -11,5 +11,9 @@ export default defineConfig({
     },
     outDir: "../_server/core/static/core"
   },
-  base: "/static"
+  base: "/static",
+  server: {
+    host: '0.0.0.0',
+    port: 5173
+  }
 })
